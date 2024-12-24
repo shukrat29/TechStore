@@ -23,7 +23,7 @@ export default function AdminProductsPage() {
   );
 }
 
-function ProductsTable() {
+const ProductsTable = () => {
   return (
     <Table>
       <TableHeader>
@@ -32,15 +32,15 @@ function ProductsTable() {
             <span className="sr-only">Available for purchase</span>
           </TableHead>
           <TableHead>Name</TableHead>
-          <TableHead>Name</TableHead>
-          <TableHead>Name</TableHead>
+          <TableHead>Price</TableHead>
+          <TableHead>Orders</TableHead>
           <TableHead>Name</TableHead>
           <TableHead className="w-0">
             <span className="sr-only">Actions</span>
           </TableHead>
         </TableRow>
       </TableHeader>
-      <TableBody></TableBody>
+      <TableBody>{/* render products here */}</TableBody>
     </Table>
   );
-}
+};
